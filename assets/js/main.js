@@ -5,7 +5,12 @@ $(function(){
 	$(".used .bar").progressbar({value: 75})
 	$(".immersed .bar").progressbar({value: 100})
 	$("#evenespecially").mouseover(function(){$(this).text("especially")});
-	//$('.masthead').scrollspy();
+	
+	$(".contact").mouseover(function(){
+		var contact = $(this).attr("id");
+		$(".contact-display").hide("fast");
+		$("#" + contact + "-display").show("fast");
+	});
 	
 	var progSelected = new Array();
 	$("#programmingbuttons .btn").click(function(){

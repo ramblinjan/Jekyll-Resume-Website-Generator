@@ -33,6 +33,16 @@
       .marketing p + h4 {
         margin-top: 28px;
       }
+
+.contact-displays{
+  text-align: center;
+  font-size: large;
+  padding: 40px;
+}
+
+.contact-display{
+  display: none;
+}
       
 ul.affix{
 	position: fixed;
