@@ -34,10 +34,21 @@
         margin-top: 28px;
       }
 
+#contactlink{
+  padding: 0px 30px 10px 30px;
+  border-bottom: 1px solid black;
+}
+
+#contactlink:hover{
+  text-decoration: none;
+}
+
 .contact-displays{
   text-align: center;
-  font-size: large;
+  font-size: x-large;
   padding: 40px;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .contact-display{

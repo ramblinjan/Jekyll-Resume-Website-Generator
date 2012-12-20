@@ -8,8 +8,11 @@ $(function(){
 	
 	$(".contact").mouseover(function(){
 		var contact = $(this).attr("id");
-		$(".contact-display").hide("fast");
-		$("#" + contact + "-display").show("fast");
+		if($("#" + contact + "-display").css("display")!="inline"){
+			$(".contact-display").hide("fast");
+			$("#" + contact + "-display").show("fast");
+			$("#contactlink").attr("href", $("#" + contact).parent("a").attr("href"));
+		}
 	});
 	
 	var progSelected = new Array();
