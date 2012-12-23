@@ -6,6 +6,7 @@ $(function(){
 	$(".used .bar").progressbar({value: 75})
 	$(".immersed .bar").progressbar({value: 100})
 	$("#evenespecially").mouseover(function(){$(this).text("especially")});
+	
 
 	//Enable contact animation
 	$(".contact").mouseover(function(){

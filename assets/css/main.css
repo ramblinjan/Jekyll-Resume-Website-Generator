@@ -2,6 +2,14 @@
   display: none;
 }
 
+#technologies .popover-content > .content > li{
+  list-style: none;
+  display: none;
+}
+
+#technologies .details{
+  display: none;
+}
 
 #contactlink{
   padding: 0px 30px 10px 30px;
