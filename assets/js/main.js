@@ -18,6 +18,9 @@ $(function(){
 	var progSelected = new Array();
 	$("#programmingbuttons .btn").click(function(){
 		var progVal = $(this).val();
+		if($("#technologies > div." + progVal).css("display")=="none"){
+			$("#technologies").prepend($("#technologies > div." + progVal))
+		}
 		if($(this).hasClass("active")){
 			progSelected.splice(progSelected.indexOf(progVal), 1);
 		}else{
