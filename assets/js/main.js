@@ -23,13 +23,19 @@ $(function(){
 		}else{
 			progSelected.push(progVal);
 		}
-		if(progSelected.length > 0){
-			$("#technologies > div").hide();
+		$("#technologies > div").each(function(){
+			var currenttech = $(this);
+			var doshow = false;
 			$.each(progSelected, function(index, value){
-				$("#technologies > div." + value).show();
+				if(currenttech.hasClass(value)){
+					doshow = true
+				}
 			});
-		}else{
-			$("#technologies > div").show();
-		}
+			if(doshow){
+				currenttech.show("fast");
+			}else{
+				currenttech.hide("fast");
+			}
+		});
 	});
 });
