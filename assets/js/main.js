@@ -17,7 +17,7 @@ $(function(){
 			$("#contactlink").attr("href", $("#" + contact).parent("a").attr("href"));
 		}
 	});
-	
+
 	//Enable animation of technology/language details
 	var progSelected = new Array();
 	$("#programmingbuttons .btn").click(function(){
