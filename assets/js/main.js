@@ -1,10 +1,10 @@
 $(function(){
 	//Set up UI elements
 	$("button[rel='tooltip']").tooltip();
-	$(".familiar .bar").progressbar({value: 25})
-	$(".dabbled .bar").progressbar({value: 50})
-	$(".used .bar").progressbar({value: 75})
-	$(".immersed .bar").progressbar({value: 100})
+	$(".bar").each(function(){
+		var val = parseInt($(this).attr("value"));
+		$(this).progressbar({value: val});
+	});
 	$("#evenespecially").mouseover(function(){$(this).text("especially")});
 	
 
