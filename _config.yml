@@ -1,0 +1,118 @@
+#Overall Information
+name:   "Jan D. Jorgensen"
+
+#Introduction
+introduction:
+    heading:    "Hi, I'm Jan."
+    subheading: "You can call me a programmer, but programming is just one important part of who I am. Scroll down to get to know me."
+
+#Page sections
+#   I don't recommend doing more than four sections since the navbar
+#   and introduction section will start to look cluttered. In addition,
+#   you may need to mess with the descriptions a bit to make them
+#   line up correctly.
+#
+#   The "content" section specifies the name of the file used from
+#   the _includes folder (or another folder specified in the jekyll
+#   configuration at the bottom of this file).
+#
+#   I set up the "content" field so if you wanted to customize the site
+#   you could drop in your own HTML, but make sure to set "enable" under
+#   each section you change below to 'false' so it disables the styling
+#   and javascript for each section.
+sections:
+    - name:         "Programming"
+      description:  "Some information about the kind of programming I've done. I believe I can learn anything, but I'd rather learn what I love."
+      content:      "programming.html"
+    - name:         "Skills"
+      description:  "I'm lucky that I love doing something that will pay the bills and helps me make cool things, but I enjoy (and I'm good at) other things too."
+      content:      "skills.html"
+    - name:         "Affiliations"
+      description:  "I'm proud of the company I keep, <a id='evenespecially'>even</a> when it's controversial."
+      content:      "affiliations.html"
+    - name:         "Contact"
+      description:  "Have a job, for pay or for a good cause (or both)? Just want to chat? Drop me a line."
+      content:      "contact.html"
+
+#Programming Section
+#   This section will sort the technologies you know as seen under
+#   "Programming" in the original site demo.  The ranges for the
+#   values in each category of technology are as follows:
+#       Familiar:   0-25
+#       Dabbled:    26-50
+#       Used:       51-75
+#       Immersed:   76-100
+#
+#   While you can change the names and descriptions of categories, 
+#   it is up to you to mess with styling, etc. if you want to add
+#   or remove the number of categories.
+programming:
+    enable:         true
+    description:    "I think words like &ldquo;beginner,&rdquo; &ldquo;amateur,&rdquo; and &ldquo;expert&rdquo; (or even fun words like &ldquo;ninja&rdquo;) are not constructive when describing a programmer's profeciency with a language or technology. I'm also a quick learner who specializes in learning by doing, and believe that time spent using a language is only one small factor in overall ability. I've listed my understanding of technologies by my exposure to them."
+    categories:
+        - name:     "Familiar"
+          tooltip:  "I've read about this enough to talk about it, or have used a technology based on it, and I am confident in my ability to learn more."
+        - name:     "Dabbled"
+          tooltip:  "I have used this at least briefly and would have no qualms using it in a project."
+        - name:     "Used"
+          tooltip:  "I consider myself well-versed in this and have used it in at least one full project."
+        - name:     
+    technologies:
+        - name:     "jQuery"
+          value:    100
+        - name:     "Twitter Bootstrap"
+          value:    100
+        - name:     "PHP"
+          value:    90
+        - name:     "MySQL"
+          value:    80
+        - name:     "Android"
+          value:    70
+        - name:     "Python"
+          value:    65
+        - name:     "Git"
+          value:    60
+        - name:     "Perl"
+          value:    40
+        - name:     "Subversion"
+          value:    35
+        - name:     "CakePHP"
+          value:    15
+        - name:     "Ruby"
+          value:    10
+
+#Skills Section
+#   If I was going to suggest you customize any section, this would
+#   be the one.  I just added this so I could mention the non-programming
+#   things that are in my life, but I didn't create any really interesting
+#   interactive stuff.
+#
+#   If you use the default behavior here, change "_includes/skills.html"
+#   since I didn't provide easy-to-fill fields.
+skills:
+    enable: true
+
+#Affiliations Section
+#   Most of what I said in "Skills" applies here.  You will have to set up
+#   your own content in the "_includes/affiliations.html" file.
+affiliations:
+    enable: true
+
+#Contact section
+#   I'm currently deciding the best way to make this section customizable,
+#   yet retain its animated feel.  I set this up because I use "jandjorgensen"
+#   for everything, so it may not work for you. Sorry!
+contact:
+    enable: true
+    first:
+        name:   "Google+"
+        link:   "http://bit.ly/jandjorgensen"
+        before: "bit.ly /"
+    second:
+        name:   "Twitter"
+        link:   "http://twitter.com/jandjorgensen"
+        before: "@"
+    third:
+        name:   "Email"
+        link:   mailto:jandjorgensen@gmail.com"
+        after:  "@ gmail.com"
