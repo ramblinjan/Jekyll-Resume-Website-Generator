@@ -82,21 +82,35 @@ programming:
           value:    10
 
 #Skills Section
-#   If I was going to suggest you customize any section, this would
-#   be the one.  I just added this so I could mention the non-programming
-#   things that are in my life, but I didn't create any really interesting
-#   interactive stuff.
-#
-#   If you use the default behavior here, change "_includes/skills.html"
-#   since I didn't provide easy-to-fill fields.
+#   Since each section under "skills" probably requires a little more
+#   detail, identify the name of the file that contains its content in
+#   "_includes/skills/" which should be valid HTML content.  It will
+#   automatically be wrapped in <p></p> tags, so you can simply type
+#   plain text if you desire.
 skills:
     enable: true
+    sections:
+        - name:    "Cooking"
+          content: "cooking.html"
 
 #Affiliations Section
-#   Most of what I said in "Skills" applies here.  You will have to set up
-#   your own content in the "_includes/affiliations.html" file.
+#   This works the same way as the skills section except the content is
+#   files contained in "_includes/affiliations/" and each has a field, "url"
+#   to point to the organization's website (or a link to your profile on
+#   that site).
 affiliations:
     enable: true
+    sections:
+        - name:     "Stack Exchange"
+          url:      "http://stackexchange.com"
+          content:  "stackexchange.html"
+        - name:     "Electronic Frontier Foundation"
+          url:      "http://eff.org"
+          content:  "eff.html"
+        - name:     "Society for American Baseball Research"
+          url:      "http://sabr.org"
+          content:  "sabr.html"
+
 
 #Contact section
 #   I'm currently deciding the best way to make this section customizable,
