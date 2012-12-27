@@ -1,6 +1,11 @@
 #Overall Information
 name:   "Jan D. Jorgensen"
 
+#Google Analytics
+ganalytics:
+    use:  true
+    id:   UA-37196124-1
+
 #Introduction
 introduction:
     heading:    "Hi, I'm Jan."
@@ -56,7 +61,8 @@ programming:
           tooltip:  "I have used this at least briefly and would have no qualms using it in a project."
         - name:     "Used"
           tooltip:  "I consider myself well-versed in this and have used it in at least one full project."
-        - name:     
+        - name:     "Immersed"
+          tooltip:  "I likely use this on a regular basis or I have used it in multiple projects. I feel I could teach someone how to use it."
     technologies:
         - name:     "jQuery"
           value:    100
@@ -72,14 +78,14 @@ programming:
           value:    65
         - name:     "Git"
           value:    60
-        - name:     "Perl"
+        - name:     "Jekyll"
           value:    40
-        - name:     "Subversion"
+        - name:     "Perl"
           value:    35
+        - name:     "Subversion"
+          value:    30
         - name:     "CakePHP"
           value:    15
-        - name:     "Ruby"
-          value:    10
 
 #Skills Section
 #   Since each section under "skills" probably requires a little more
