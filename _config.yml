@@ -11,6 +11,9 @@ introduction:
     heading:    "Hi, I'm Jan."
     subheading: "You can call me a programmer, but programming is just one important part of who I am. Scroll down to get to know me."
 
+#Footer
+footer:
+    content: 'Created by Jan D. Jorgensen. Full source available on <a href="https://github.com/jandjorgensen/jandjorgensen.github.com">GitHub</a>'
 #Page sections
 #   I don't recommend doing more than four sections since the navbar
 #   and introduction section will start to look cluttered. In addition,
