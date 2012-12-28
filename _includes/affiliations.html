@@ -1,20 +1,9 @@
 <div class="span12">
     <h3>Affiliations</h3>
-    <h4><a href="http://stackexchange.com">Stack Exchange</a></h4>
-    <p>
-        <a href="http://stackexchange.com/users/194719/jandjorgensen"><img src="http://stackexchange.com/users/flair/194719.png" width="208" height="58" alt="profile for jandjorgensen on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for jandjorgensen on Stack Exchange, a network of free, community-driven Q&amp;A sites" /></a><br />
-    Asking and answering questions on Stack Overflow has helped me develop my programming knowledge, especially with <a href="http://stackoverflow.com/search?q=user:437226+[jquery]">jQuery</a>.  I also spend some time on other Stack Exchange sites and am currently serving as a Moderator Pro Tempore on the <a href="http://raspberrypi.stackexchange.com">Raspbery Pi Stack Exchange beta site.</a>
-    </p>
-    <h4><a href="https://eff.org">Electronic Frontier Foundation</a></h4>
-    <p><a href="https://www.eff.org/join"><img src="https://www.eff.org/sites/default/files/EFF-Banner.jpg" alt="Join EFF!" border="0"></a><br />
-        I am a proud member of the EFF.  They are one of the strongest forces driving and maintaining technological freedom and sensible legislation.
-        In an era where lawmakers and courts are frantically trying to keep up with pace of technology, I am happy to support 
-        an organization that tries to ensure they do it correctly.
-    </p>
-    <h4><a href="http://sabr.org/">Society for American Baseball Research</a></h4>
-    <p>
-        My interest in SABR comes primarily from my interest in baseball statistics (specifically <a href="http://en.wikipedia.org/wiki/Sabrmetrics">sabermetrics</a>), 
-        SABR also promotes important work in baseball history.  I'm happy to support SABR as a member and while I've only done baseball research for personal projects, 
-        I hope to contribute to a SABR research committee one day.
-    </p>
+    {% for org in site.affiliations.sections %}
+    <h4><a href="{{ org.url }}">{{ org.name }}</a></h4>
+    <div>
+    {% include org.content %}
+    </div>
+    {% endfor %}
 </div>
