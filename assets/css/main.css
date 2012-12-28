@@ -1,16 +1,17 @@
-#technologies > div{
-  display: none;
+---
+
+---
+ul.affix{
+  position: fixed;
+  margin-left: -150px;
+}
+.affix li{
+  clear: right;
+  text-align: right;
+  float: right;
 }
 
-#technologies .popover-content > .content > li{
-  list-style: none;
-  display: none;
-}
-
-#technologies .details{
-  display: none;
-}
-
+{% if site.contact.enable %}
 #contactlink{
   padding: 0px 30px 10px 30px;
   border-bottom: 1px solid black;
@@ -31,20 +32,23 @@
 .contact-display{
   display: none;
 }
-      
-ul.affix{
-	position: fixed;
-	margin-left: -150px;
-}
-.affix li{
-	clear: right;
-	text-align: right;
-	float: right;
+{% endif %}
+
+{% if site.programming.enable %}
+#technologies > div{
+  display: none;
 }
 
+#technologies .popover-content > .content > li{
+  list-style: none;
+  display: none;
+}
 
+#technologies .details{
+  display: none;
+}
 .familiar .ui-widget-header{
-	background-color: whiteSmoke;
+background-color: whiteSmoke;
 background-image: -moz-linear-gradient(top,white,#E6E6E6);
 background-image: -webkit-gradient(linear,0 0,0 100%,from(white),to(#E6E6E6));
 background-image: -webkit-linear-gradient(top,white,#E6E6E6);
@@ -59,7 +63,7 @@ border-bottom-color: #A2A2A2;
 -moz-border-radius: 4px;
 }    
 .dabbled .ui-widget-header{
-	background-color: #49AFCD;
+  background-color: #49AFCD;
 background-image: -moz-linear-gradient(top,#5BC0DE,#2F96B4);
 background-image: -webkit-gradient(linear,0 0,0 100%,from(#5BC0DE),to(#2F96B4));
 background-image: -webkit-linear-gradient(top,#5BC0DE,#2F96B4);
@@ -70,7 +74,7 @@ border-color: #2F96B4 #2F96B4 #1F6377;
 border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 .used .ui-widget-header{
-	background-color: #006DCC;
+  background-color: #006DCC;
 background-image: -moz-linear-gradient(top,#08C,#04C);
 background-image: -webkit-gradient(linear,0 0,0 100%,from(#08C),to(#04C));
 background-image: -webkit-linear-gradient(top,#08C,#04C);
@@ -81,7 +85,7 @@ border-color: #04C #04C #002A80;
 border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }    
 .immersed .ui-widget-header{
-	background-color: #5BB75B;
+  background-color: #5BB75B;
 background-image: -moz-linear-gradient(top,#62C462,#51A351);
 background-image: -webkit-gradient(linear,0 0,0 100%,from(#62C462),to(#51A351));
 background-image: -webkit-linear-gradient(top,#62C462,#51A351);
@@ -91,7 +95,9 @@ background-repeat: repeat-x;
 border-color: #51A351 #51A351 #387038;
 border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
+{% endif %}
 
+/* Built-in styles from bootstrap marketing template */
  body {
         padding-top: 20px;
         padding-bottom: 40px;
