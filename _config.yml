@@ -60,14 +60,19 @@ programming:
     description:    "I think words like &ldquo;beginner,&rdquo; &ldquo;amateur,&rdquo; and &ldquo;expert&rdquo; (or even fun words like &ldquo;ninja&rdquo;) are not constructive when describing a programmer's profeciency with a language or technology. I'm also a quick learner who specializes in learning by doing, and believe that time spent using a language is only one small factor in overall ability. I've listed my understanding of technologies by my exposure to them."
     categories:
     # Once again, IT IS UP TO YOU TO FIX EVERYTHING IF YOU DON'T USE EXACTLY 4 CATEGORIES
+    # The "class" section is for styling the buttons (the defaults are bootstrap built-in classes)
         - name:     "Familiar"
           tooltip:  "I've read about this enough to talk about it, or have used a technology based on it, and I am confident in my ability to learn more."
+          class:    ""
         - name:     "Dabbled"
           tooltip:  "I have used this at least briefly and would have no qualms using it in a project."
+          class:    "btn-info"
         - name:     "Used"
           tooltip:  "I consider myself well-versed in this and have used it in at least one full project."
+          class:    "btn-primary"
         - name:     "Immersed"
           tooltip:  "I likely use this on a regular basis or I have used it in multiple projects. I feel I could teach someone how to use it."
+          class:    "btn-success"
     # WELP THAT'S EXACTLY FOUR CATEGORIES LOOKS LIKE IT'S TIME TO STOP
     technologies:
         #It's suggested that you sort from greatest to least
