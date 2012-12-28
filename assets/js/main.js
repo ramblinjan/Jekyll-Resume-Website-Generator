@@ -1,24 +1,19 @@
+---
+
+---
 $(function(){
-	//Set up UI elements
+	$("#evenespecially").mouseover(function(){$(this).text("especially")});
+
+	{% if site.programming.enable %}
+	//Programming section
+	//tooltips
 	$("button[rel='tooltip']").tooltip();
+	//progress bar setup
 	$(".bar").each(function(){
 		var val = parseInt($(this).attr("value"));
 		$(this).progressbar({value: val});
 	});
-	$("#evenespecially").mouseover(function(){$(this).text("especially")});
-	
-
-	//Enable contact animation
-	$(".contact").mouseover(function(){
-		var contact = $(this).attr("id");
-		if($("#" + contact + "-display").css("display")!="inline"){
-			$(".contact-display").hide("fast");
-			$("#" + contact + "-display").show("fast");
-			$("#contactlink").attr("href", $("#" + contact).parent("a").attr("href"));
-		}
-	});
-
-	//Enable animation of technology/language details
+	//progress bar interactivity
 	var progSelected = new Array();
 	$("#programmingbuttons .btn").click(function(){
 		var progVal = $(this).val();
@@ -45,4 +40,18 @@ $(function(){
 			}
 		});
 	});
+	{% endif %}
+
+	{% if site.contact.enable %}
+	//Contact section animation
+	$(".contact").mouseover(function(){
+		var contact = $(this).attr("id");
+		if($("#" + contact + "-display").css("display")!="inline"){
+			$(".contact-display").hide("fast");
+			$("#" + contact + "-display").show("fast");
+			$("#contactlink").attr("href", $("#" + contact).parent("a").attr("href"));
+		}
+	});
+	{% endif %}
+
 });
