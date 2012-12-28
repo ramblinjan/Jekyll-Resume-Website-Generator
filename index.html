@@ -71,7 +71,9 @@
 
       {% for section in site.sections %}
       <hr />
+        <div id="{{section.name | downcase}}" class="row-fluid marketing">
         {% include section.content %}
+        </div>
       {% endfor %}
 
       <div class="footer">

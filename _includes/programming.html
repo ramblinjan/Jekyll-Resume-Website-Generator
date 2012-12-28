@@ -1,29 +1,28 @@
-<div id="programming" class="row-fluid marketing">
-        <div class="span12">
-            <h3>Programming</h4>
-            <p>
-                {{ site.programming.description }}
-            </p>
-        </div>
-        <div id="programmingbuttons" class="row-fluid">
-            {% for button in site.programming.categories %}
-            <div class="span3"><button class="btn pull-right span8 {{ button.class }}" data-toggle"button" rel="tooltip" title"{{ button.tooltip }}" value="{{ button.name | downcase }}">{{ button.name }}</button></div>
-            {% endfor %}
-        </div>
 
-        <div id="technologies">
-        {% for tech in site.programming.technologies %}
-            {% if tech.value < 26 %}
-        <div class="row-fluid {{ site.programming.categories[0].name | downcase}}">
-            {% elsif tech.value < 51 %}
-        <div class="row-fluid {{ site.programming.categories[1].name | downcase}}">
-            {% elsif tech.value < 76 %}
-        <div class="row-fluid {{ site.programming.categories[2].name | downcase}}">
-            {% else %}
-        <div class="row-fluid {{ site.programming.categories[3].name | downcase}}">
-            {% endif %}
-            <h4>{{ tech.name }}</h4>
-            <div value="{{tech.value}}" class="span12 bar"></div>
-        </div>
-        {% endfor %}
-      </div>
+<div class="span12">
+    <h3>Programming</h4>
+    <p>
+        {{ site.programming.description }}
+    </p>
+</div>
+<div id="programmingbuttons" class="row-fluid">
+    {% for button in site.programming.categories %}
+    <div class="span3"><button class="btn pull-right span8 {{ button.class }}" data-toggle"button" rel="tooltip" title"{{ button.tooltip }}" value="{{ button.name | downcase }}">{{ button.name }}</button></div>
+    {% endfor %}
+</div>
+
+<div id="technologies">
+{% for tech in site.programming.technologies %}
+    {% if tech.value < 26 %}
+<div class="row-fluid {{ site.programming.categories[0].name | downcase}}">
+    {% elsif tech.value < 51 %}
+<div class="row-fluid {{ site.programming.categories[1].name | downcase}}">
+    {% elsif tech.value < 76 %}
+<div class="row-fluid {{ site.programming.categories[2].name | downcase}}">
+    {% else %}
+<div class="row-fluid {{ site.programming.categories[3].name | downcase}}">
+    {% endif %}
+    <h4>{{ tech.name }}</h4>
+    <div value="{{tech.value}}" class="span12 bar"></div>
+</div>
+{% endfor %}
