@@ -102,18 +102,15 @@ programming:
 #Skills Section
 #   Since each section under "skills" probably requires a little more
 #   detail, identify the name of the file that contains its content in
-#   "_includes/skills/" which should be valid HTML content.  It will
-#   automatically be wrapped in <p></p> tags, so you can simply type
-#   plain text if you desire.
+#   "_includes/" which should be valid HTML content.
 skills:
     enable: true
     sections:
         - name:    "Cooking"
-          content: "cooking.html"
+          content: "skills/cooking.html"
 
 #Affiliations Section
-#   This works the same way as the skills section except the content is
-#   files contained in "_includes/affiliations/" and each has a field, "url"
+#   This works similar to the skills section except each has a field, "url"
 #   to point to the organization's website (or a link to your profile on
 #   that site).
 affiliations:
@@ -121,13 +118,13 @@ affiliations:
     sections:
         - name:     "Stack Exchange"
           url:      "http://stackexchange.com"
-          content:  "stackexchange.html"
+          content:  "affiliations/stackexchange.html"
         - name:     "Electronic Frontier Foundation"
           url:      "http://eff.org"
-          content:  "eff.html"
+          content:  "affiliations/eff.html"
         - name:     "Society for American Baseball Research"
           url:      "http://sabr.org"
-          content:  "sabr.html"
+          content:  "affiliations/sabr.html"
 
 
 #Contact section
