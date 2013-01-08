@@ -14,7 +14,7 @@ introduction:
 
 #Footer
 footer:
-    content: 'Jekyll-based <a href="https://github.com/jandjorgensen/personal-jekyll-site-template">site template</a> created by <a href="https://github.com/jandjorgensen">Jan D. Jorgensen</a>. Full source available on <a href="https://github.com/jandjorgensen/jandjorgensen.github.com">GitHub</a>'
+    content: 'Jekyll-based <a href="https://github.com/jandjorgensen/jandjorgensen.github.com.raw">site template</a> created by <a href="https://github.com/jandjorgensen">Jan D. Jorgensen</a>. Fork me, please.'
 #Page sections
 #   I don't recommend doing more than four sections since the navbar
 #   and introduction section will start to look cluttered. In addition,
@@ -37,7 +37,7 @@ sections:
       description:  "I'm lucky that I love doing something that will pay the bills and helps me make cool things, but I enjoy (and I'm good at) other things too."
       content:      "skills.html"
     - name:         "Affiliations"
-      description:  "I'm proud of the company I keep, <a id='evenespecially'>even</a> when it's controversial."
+      description:  "If I'm judged by the company I keep, start judging me here."
       content:      "affiliations.html"
     - name:         "Contact"
       description:  "Have a job, for pay or for a good cause (or both)? Just want to chat? Drop me a line."

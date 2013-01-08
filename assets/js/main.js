@@ -2,7 +2,6 @@
 
 ---
 $(function(){
-	$("#evenespecially").mouseover(function(){$(this).text("especially")});
 
 	{% if site.programming.enable %}
 	//Programming section
