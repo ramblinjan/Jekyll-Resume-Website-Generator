@@ -108,6 +108,10 @@ skills:
     sections:
         - name:    "Cooking"
           content: "skills/cooking.html"
+        - name:    "Public Speaking and Oral Communication"
+          content: "skills/oral.html"
+        - name:    "Writing and Written Communication"
+          content: "skills/written.html"
 
 #Affiliations Section
 #   This works similar to the skills section except each has a field, "url"
@@ -125,6 +129,12 @@ affiliations:
         - name:     "Society for American Baseball Research"
           url:      "http://sabr.org"
           content:  "affiliations/sabr.html"
+        - name:     "Geeks Who Drink"
+          url:      "http://geekswhodrink.com"
+          content:  "affiliations/gwd.html"
+        - name:     "Code for Tempe"
+          url:      "http://brigade.codeforamerica.org"
+          content:  "affiliations/cft.html"
 
 
 #Contact section
