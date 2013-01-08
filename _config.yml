@@ -14,7 +14,7 @@ introduction:
 
 #Footer
 footer:
-    content: 'Created by Jan D. Jorgensen. Full source available on <a href="https://github.com/jandjorgensen/jandjorgensen.github.com">GitHub</a>'
+    content: 'Jekyll-based <a href="https://github.com/jandjorgensen/personal-jekyll-site-template">site template</a> created by <a href="https://github.com/jandjorgensen">Jan D. Jorgensen</a>. Full source available on <a href="https://github.com/jandjorgensen/jandjorgensen.github.com">GitHub</a>'
 #Page sections
 #   I don't recommend doing more than four sections since the navbar
 #   and introduction section will start to look cluttered. In addition,
