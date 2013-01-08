@@ -1,8 +1,7 @@
-#Quick-start Guide
-I created this template so programmers could quickly deploy a resume-style personal webpage for free using GitHub pages.  This quick-start guide should tell you everything you need to know to use this to create your own page hosted for free on GitHub.  Your only prerequisite is to have a GitHub account--in fact if you use the online editor provided by GitHub to edit the given configuration file, you don't have to download anything.
+#Introduction
+Originally, I wanted to develop a template that enabled quick and easy deployment via GitHub Pages.  However, GitHub Pages does not support custom plugins and this meant losing some of the customization I was really hoping for.  Unfortunately, what this means for you is you will have to install Jekyll (which means installing Ruby), clone this repository, and then build it locally.  Fortunately, this gives you the freedom to host the site that is generated on a service of your choosing.  I will have a recommended development setup for publishing to GitHub pages below, but first we'll just go over how to generate your static site.
 
-## Forking and preparing for pages deployment
-First, fork this repository.  To make this page 
+#Dependencies
 
 #Advanced customization
 
