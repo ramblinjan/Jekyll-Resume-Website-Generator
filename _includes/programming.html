@@ -7,7 +7,7 @@
 </div>
 <div id="programmingbuttons" class="row-fluid">
     {% for button in site.programming.categories %}
-    <div class="span3"><button class="btn pull-right span8 {{ button.class }}" data-toggle="button" rel="tooltip" title"{{ button.tooltip }}" value="{{ button.name | downcase }}">{{ button.name }}</button></div>
+    <div class="span3"><button class="btn pull-right span8 {{ button.class }}" data-toggle="button" rel="tooltip" title="{{ button.tooltip }}" value="{{ button.name | downcase }}">{{ button.name }}</button></div>
     {% endfor %}
 </div>
 
