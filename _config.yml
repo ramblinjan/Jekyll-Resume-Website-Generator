@@ -14,7 +14,7 @@ introduction:
 
 #Footer
 footer:
-    content: 'Jekyll-based <a href="https://github.com/jandjorgensen/jandjorgensen.github.com.raw">site template</a> created by <a href="https://github.com/jandjorgensen">Jan D. Jorgensen</a>. Fork me, please.'
+    content: 'Jekyll-based <a href="https://github.com/jandjorgensen/jandjorgensen.github.com.raw">site template</a> created by <a href="https://github.com/jandjorgensen">Jan D. Jorgensen</a>. Fork me, please.  All content on this site is under <a href="http://creativecommons.org/publicdomain/mark/1.0/">Public Domain</a> in memory of Aaron Swartz.'
 #Page sections
 #   I don't recommend doing more than four sections since the navbar
 #   and introduction section will start to look cluttered. In addition,
@@ -133,7 +133,7 @@ affiliations:
           url:      "http://geekswhodrink.com"
           content:  "affiliations/gwd.html"
         - name:     "Code for Tempe"
-          url:      "http://brigade.codeforamerica.org"
+          url:      "http://codefortempe.org"
           content:  "affiliations/cft.html"
 
 
