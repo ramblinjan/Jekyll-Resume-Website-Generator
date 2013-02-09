@@ -84,11 +84,13 @@ programming:
           value:    90
         - name:     "MySQL"
           value:    80
-        - name:     "Android"
-          value:    70
-        - name:     "Python"
-          value:    65
         - name:     "Git"
+          value:    70
+        - name:     "CodeIgniter"
+          value:    70
+        - name:     "Android"
+          value:    65
+        - name:     "Python"
           value:    60
         - name:     "Jekyll"
           value:    40
@@ -132,9 +134,6 @@ affiliations:
         - name:     "Geeks Who Drink"
           url:      "http://geekswhodrink.com"
           content:  "affiliations/gwd.html"
-        - name:     "Code for Tempe"
-          url:      "http://codefortempe.org"
-          content:  "affiliations/cft.html"
 
 
 #Contact section
